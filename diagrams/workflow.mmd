@@ -1,0 +1,11 @@
+graph TD
+    START([START]) --> researcher[Researcher Agent]
+    researcher --> writer[Writer Agent]
+    writer --> reviewer[Reviewer Agent]
+    reviewer --> END([END])
+
+    classDef agent fill:#e1f5fe,stroke:#0288d1,stroke-width:2px;
+    classDef edgePoint fill:#f3e5f5,stroke:#7b1fa2,stroke-width:2px;
+
+    class START,END edgePoint;
+    class researcher,writer,reviewer agent;
